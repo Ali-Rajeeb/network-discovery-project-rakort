@@ -75,7 +75,7 @@ copy dataset\findings_custom.jsonl dataset\findings.jsonl /Y
 python tools\make_charts.py
 explorer reports\figures
 
-# Eğer alive listesi boş çıkarsa (ping kapalı):
-# Direct Nmap:
-# nmap -sS -sV -T4 -Pn -iL targets\custom_targets.txt --top-ports 200 -oN raw\nmap_custom.txt -oX raw\nmap_custom.xml
+ Eğer alive listesi boş çıkarsa (ping kapalı):
+ Direct Nmap:
+ nmap -sS -sV -T4 -Pn -iL targets\custom_targets.txt --top-ports 200 -oN raw\nmap_custom.txt -oX raw\nmap_custom.xml
 
