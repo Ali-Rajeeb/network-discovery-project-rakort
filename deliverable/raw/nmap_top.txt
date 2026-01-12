@@ -1,0 +1,138 @@
+# Nmap 7.98 scan initiated Sun Jan 11 23:56:03 2026 as: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -sS -sV -T4 -Pn -iL dataset\\alive_ips.txt --top-ports 200 -oN raw\\nmap_top.txt -oX raw\\nmap_top.xml
+Nmap scan report for host.docker.internal (192.168.1.4)
+Host is up (0.00050s latency).
+Not shown: 194 closed tcp ports (reset)
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+902/tcp  open  ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+3306/tcp open  mysql           MySQL (unauthorized)
+7070/tcp open  ssl/realserver?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.1.1
+Host is up (0.0059s latency).
+Not shown: 192 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         Dropbear sshd 2020.80 (protocol 2.0)
+53/tcp   open  domain      dnsmasq 2.85
+80/tcp   open  http
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp  open  ssl/https
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+1900/tcp open  upnp        Portable SDK for UPnP devices 1.6.19 (Linux 4.4.115; UPnP 1.0)
+8080/tcp open  http-proxy
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.98%I=7%D=1/11%Time=69640E7A%P=i686-pc-windows-windows%r(
+SF:GetRequest,1A4,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://:443/
+SF:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nX-Frame-Options:\x2
+SF:0SAMEORIGIN\r\nContent-Security-Policy:\x20frame-ancestors\x20'none'\r\
+SF:nContent-Length:\x2098\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:
+SF:\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:0
+SF:1\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<html><
+SF:head><title>302\x20Found</title></head><body><center><h1>302\x20Found</
+SF:h1></center></body></html>")%r(HTTPOptions,159,"HTTP/1\.1\x20406\x20Not
+SF:\x20Acceptable\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nConte
+SF:nt-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20J
+SF:SESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20
+SF:GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<html><head>
+SF:<title>406\x20Not\x20Acceptable</title></head><body><center><h1>406\x20
+SF:Not\x20Acceptable</h1></center></body></html>")%r(RTSPRequest,159,"HTTP
+SF:/1\.1\x20406\x20Not\x20Acceptable\r\nContent-Type:\x20text/html;\x20cha
+SF:rset=utf-8\r\nContent-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\
+SF:r\nSet-Cookie:\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201
+SF:970\x2000:00:01\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\
+SF:r\n\r\n<html><head><title>406\x20Not\x20Acceptable</title></head><body>
+SF:<center><h1>406\x20Not\x20Acceptable</h1></center></body></html>")%r(Fo
+SF:urOhFourRequest,1C7,"HTTP/1\.1\x20302\x20Found\r\nLocation:\x20https://
+SF::443/nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nContent-Type:\x20text/html
+SF:;\x20charset=utf-8\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Securit
+SF:y-Policy:\x20frame-ancestors\x20'none'\r\nContent-Length:\x2098\r\nX-Fr
+SF:ame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20JSESSIONID=deleted;\x20Exp
+SF:ires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;\x20Path=/;\x20HttpOn
+SF:ly\r\nConnection:\x20close\r\n\r\n<html><head><title>302\x20Found</titl
+SF:e></head><body><center><h1>302\x20Found</h1></center></body></html>")%r
+SF:(GenericLines,159,"HTTP/1\.1\x20406\x20Not\x20Acceptable\r\nContent-Typ
+SF:e:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x20116\r\nX-Frame-
+SF:Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20JSESSIONID=deleted;\x20Expires
+SF:=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;\x20Path=/;\x20HttpOnly\r
+SF:\nConnection:\x20close\r\n\r\n<html><head><title>406\x20Not\x20Acceptab
+SF:le</title></head><body><center><h1>406\x20Not\x20Acceptable</h1></cente
+SF:r></body></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.98%T=SSL%I=7%D=1/11%Time=69640E82%P=i686-pc-windows-win
+SF:dows%r(GetRequest,3000,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text
+SF:/html;\x20charset=utf-8\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Se
+SF:curity-Policy:\x20frame-ancestors\x20'none'\r\nContent-Length:\x2081385
+SF:\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20JSESSIONID=deleted
+SF:;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;\x20Path=/;\x
+SF:20HttpOnly\r\nConnection:\x20keep-alive\r\n\r\n<!DOCTYPE\x20html\x20PUB
+SF:LIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\r\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-tran
+SF:sitional\.dtd\">\r\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x
+SF:20xml:lang=\"en\"\x20lang=\"en\">\r\n<meta\x20http-equiv=\"Content-Type
+SF:\"\x20content=\"text/html;\x20charset=utf-8\"/>\r\n\r\n<head>\r\n\x20\x
+SF:20\x20\x20<link\x20rel=\"shortcut\x20icon\"\x20type=\"image/x-icon\"\x2
+SF:0href=\"\.\./img/favicon\.ico\"/>\r\n\x20\x20\x20\x20<link\x20rel=\"sty
+SF:lesheet\"\x20href=\"\.\./css/main\.css\"/>\r\n\x20\x20\x20\x20<link\x20
+SF:rel=\"stylesheet\"\x20href=\"\.\./css/login\.css\"/>\r\n\x20\x20\x20\x2
+SF:0<link\x20rel=\"stylesheet\"\x20href=\"\.\./css/jquery\.tpInput\.css\"/
+SF:>\r\n\r\n\x20\x20\x20\x20<script\x20src=\"\.\./js/jquery-1\.8\.3\.min\.
+SF:js\"\x20type=\"text/javascript\"")%r(HTTPOptions,159,"HTTP/1\.1\x20406\
+SF:x20Not\x20Acceptable\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\
+SF:nContent-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie
+SF::\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:
+SF:01\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<html>
+SF:<head><title>406\x20Not\x20Acceptable</title></head><body><center><h1>4
+SF:06\x20Not\x20Acceptable</h1></center></body></html>")%r(FourOhFourReque
+SF:st,1A7,"HTTP/1\.1\x20406\x20Not\x20Acceptable\r\nContent-Type:\x20text/
+SF:html;\x20charset=utf-8\r\nX-Frame-Options:\x20SAMEORIGIN\r\nContent-Sec
+SF:urity-Policy:\x20frame-ancestors\x20'none'\r\nContent-Length:\x20116\r\
+SF:nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20JSESSIONID=deleted;\x
+SF:20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;\x20Path=/;\x20H
+SF:ttpOnly\r\nConnection:\x20close\r\n\r\n<html><head><title>406\x20Not\x2
+SF:0Acceptable</title></head><body><center><h1>406\x20Not\x20Acceptable</h
+SF:1></center></body></html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.98%I=7%D=1/11%Time=69640E7A%P=i686-pc-windows-windows%
+SF:r(GetRequest,1A7,"HTTP/1\.1\x20406\x20Not\x20Acceptable\r\nContent-Type
+SF::\x20text/html;\x20charset=utf-8\r\nX-Frame-Options:\x20SAMEORIGIN\r\nC
+SF:ontent-Security-Policy:\x20frame-ancestors\x20'none'\r\nContent-Length:
+SF:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x20JSESSIONID=
+SF:deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x20GMT;\x20Pa
+SF:th=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<html><head><title>406
+SF:\x20Not\x20Acceptable</title></head><body><center><h1>406\x20Not\x20Acc
+SF:eptable</h1></center></body></html>")%r(HTTPOptions,159,"HTTP/1\.1\x204
+SF:06\x20Not\x20Acceptable\r\nContent-Type:\x20text/html;\x20charset=utf-8
+SF:\r\nContent-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Coo
+SF:kie:\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:
+SF:00:01\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<ht
+SF:ml><head><title>406\x20Not\x20Acceptable</title></head><body><center><h
+SF:1>406\x20Not\x20Acceptable</h1></center></body></html>")%r(RTSPRequest,
+SF:159,"HTTP/1\.1\x20406\x20Not\x20Acceptable\r\nContent-Type:\x20text/htm
+SF:l;\x20charset=utf-8\r\nContent-Length:\x20116\r\nX-Frame-Options:\x20SA
+SF:MEORIGIN\r\nSet-Cookie:\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x2
+SF:0Jan\x201970\x2000:00:01\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\
+SF:x20close\r\n\r\n<html><head><title>406\x20Not\x20Acceptable</title></he
+SF:ad><body><center><h1>406\x20Not\x20Acceptable</h1></center></body></htm
+SF:l>")%r(FourOhFourRequest,1A7,"HTTP/1\.1\x20406\x20Not\x20Acceptable\r\n
+SF:Content-Type:\x20text/html;\x20charset=utf-8\r\nX-Frame-Options:\x20SAM
+SF:EORIGIN\r\nContent-Security-Policy:\x20frame-ancestors\x20'none'\r\nCon
+SF:tent-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\nSet-Cookie:\x2
+SF:0JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:01\x
+SF:20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n\r\n<html><hea
+SF:d><title>406\x20Not\x20Acceptable</title></head><body><center><h1>406\x
+SF:20Not\x20Acceptable</h1></center></body></html>")%r(Socks5,159,"HTTP/1\
+SF:.1\x20406\x20Not\x20Acceptable\r\nContent-Type:\x20text/html;\x20charse
+SF:t=utf-8\r\nContent-Length:\x20116\r\nX-Frame-Options:\x20SAMEORIGIN\r\n
+SF:Set-Cookie:\x20JSESSIONID=deleted;\x20Expires=Thu,\x2001\x20Jan\x201970
+SF:\x2000:00:01\x20GMT;\x20Path=/;\x20HttpOnly\r\nConnection:\x20close\r\n
+SF:\r\n<html><head><title>406\x20Not\x20Acceptable</title></head><body><ce
+SF:nter><h1>406\x20Not\x20Acceptable</h1></center></body></html>");
+MAC Address: 60:83:E7:AD:5D:54 (TP-Link PTE.)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel, cpe:/o:linux:linux_kernel:4.4.115
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 11 23:58:28 2026 -- 2 IP addresses (2 hosts up) scanned in 144.99 seconds

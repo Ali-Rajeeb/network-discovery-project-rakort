@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/raw outputs (istersen raw'ı tutabilirsin)
+# raw/
+# meta/

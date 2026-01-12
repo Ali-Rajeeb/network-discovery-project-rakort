@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-01-11T20:43:50.982621Z",
+  "targets_file": "targets\\all_targets.txt",
+  "out_file": "dataset\\alive_hosts.jsonl",
+  "total_targets": 254,
+  "alive_count": 2,
+  "dead_count": 252,
+  "timeout_ms": 400,
+  "threads": 60,
+  "duration_ms": 2400
+}

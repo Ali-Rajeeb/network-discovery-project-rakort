@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-01-11T20:32:38.903638Z",
+  "include_cidrs": [
+    "192.168.1.0/24"
+  ],
+  "exclude": [],
+  "total_targets": 254,
+  "batch_size": 128,
+  "batch_count": 2,
+  "all_targets_file": "targets\\all_targets.txt",
+  "batch_files_example": [
+    "targets\\batches\\batch_0000.txt",
+    "targets\\batches\\batch_0001.txt"
+  ]
+}
